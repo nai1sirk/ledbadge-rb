@@ -1,5 +1,34 @@
 # ledbadge-rb
 
+All credits go to ajesler who created this script, I do not expect to add any useful functionality to it.
+
+I intend to use it for a 12X48 LED badge purchased on DealExtreme.
+
+The script works fine as is, but the badge is capable of 8 messages instead of 6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################################################################################
 This is a basic ruby script for controlling a B1236 LED badge. These were given out at Codemania 2012 as name tags for attendees. 
 
 Run the script like so:
