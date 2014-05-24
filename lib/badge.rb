@@ -104,7 +104,7 @@ class Badge
 	end
 
 	def set_messages(messages)
-		raise "Number of messages must be 1-6" unless between_inclusive(1, 6, messages.length)
+		raise "Number of messages must be 1-8" unless between_inclusive(1, 8, messages.length)
 
 		# now iterate through the messages, and set them
 		packets = []
@@ -151,7 +151,7 @@ class Badge
 	    }.merge(opts)
 
 	    raise "Message cannot have a length greater than 250 characters. Your message was #{message.length} characters" unless message.length <= 250
-		raise 'index must be between 1 and 6' unless between_inclusive(1, 6, o[:msgindex])
+		raise 'index must be between 1 and 8' unless between_inclusive(1, 8, o[:msgindex])
 
 		msgFile = [o[:speed].to_s, o[:msgindex].to_s, o[:action], message.length].pack("aaac").bytes.to_a
 		msgFile += message.bytes.to_a
